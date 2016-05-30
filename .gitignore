@@ -1,0 +1,17 @@
+*.iml
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+gradlew
+gradlew.bat
+GoodRecyclerView.iml
+gradle.properties
+GoodRecyclerView/src/androidTest
+GoodRecyclerView/src/test
+GoodRecyclerView/proguard-rules.pro
+
+/.idea
+
