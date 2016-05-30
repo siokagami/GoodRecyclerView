@@ -39,17 +39,17 @@ public class GoodRecyclerViewAdapter extends RecyclerView.Adapter {
             if (loadState == GoodRecyclerView.STATE_LOADING) {
                 moreLoadViewHolder.moreLoadProgress.setVisibility(View.VISIBLE);
                 moreLoadViewHolder.moreLoadTextView.setVisibility(View.VISIBLE);
-                moreLoadViewHolder.moreLoadTextView.setText("加载中，请稍后...");
+                moreLoadViewHolder.moreLoadTextView.setText("Loading...");
                 loadState = GoodRecyclerView.STATE_SUCCESS;
             } else if (loadState == GoodRecyclerView.STATE_FAIL) {
                 moreLoadViewHolder.moreLoadProgress.setVisibility(View.GONE);
                 moreLoadViewHolder.moreLoadTextView.setVisibility(View.VISIBLE);
-                moreLoadViewHolder.moreLoadTextView.setText("加载失败");
+                moreLoadViewHolder.moreLoadTextView.setText("Loading Failed");
                 loadState = GoodRecyclerView.STATE_SUCCESS;
             } else if (loadState == GoodRecyclerView.STATE_EMPTY) {
                 moreLoadViewHolder.moreLoadProgress.setVisibility(View.GONE);
                 moreLoadViewHolder.moreLoadTextView.setVisibility(View.VISIBLE);
-                moreLoadViewHolder.moreLoadTextView.setText("没有数据啦");
+                moreLoadViewHolder.moreLoadTextView.setText("No Data");
                 loadState = GoodRecyclerView.STATE_SUCCESS;
             } else {
                 moreLoadViewHolder.moreLoadProgress.setVisibility(View.GONE);
